@@ -1,0 +1,221 @@
+/* GLOBAL */
+
+@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+
+/* HOME */
+
+.home {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 400px 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 15px;
+}
+
+.home-maincarousel {
+  grid-area: 1 / 1 / 2 / 2;
+  z-index:0
+}
+
+.home-movielist {
+  grid-area: 2 / 1 / 3 / 2;
+  overflow: scroll;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+/* CAROUSEL */
+
+.d-block {
+  max-height: 400px;
+  object-fit: cover;
+}
+
+/* SEARCH PAGE*/
+
+#FilterSelectBoxes {
+  display: flex;
+  flex-direction: row;
+}
+
+/*COMPARE PAGE*/
+
+.compare-page-parent {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+
+.compare-page-div1 {
+  grid-area: 1 / 1 / 2 / 2;
+  justify-self: center;
+  align-self: center;
+}
+
+.compare-page-div2 {
+  grid-area: 1 / 2 / 2 / 3;
+  justify-self: center;
+  align-self: center;
+}
+
+.compare-page-div3 {
+  grid-area: 1 / 3 / 2 / 4;
+  justify-self: center;
+  align-self: center;
+}
+
+.compare-page-div4 {
+  grid-area: 1 / 4 / 2 / 5;
+  justify-self: center;
+  align-self: center;
+}
+
+/*BROWSE PAGE*/
+
+#BrowseHelperImage {
+  object-fit: cover
+}
+
+.bg-dark {
+  border-radius: 0 !important;
+  opacity: .8
+}
+
+.bg-dark:hover {
+  opacity: 1;
+  overflow: visible;
+  box-sizing: border-box;
+  transition: all 0.4s ease-in-out;
+  border-radius: 0;
+}
+
+/* TEAPOT */
+
+.teapot {
+  display: flex;
+  flex-direction: column;
+  color: #7C9EB2;
+  font-size: 125px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 300px;
+  width: 170px;
+  align-items: center;
+}
+
+#teapot-text {
+  font-size: 24px;
+}
+
+/*DESCRIPTION PAGE*/
+
+
+.Description {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 545px 1fr 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  color: White;
+  }
+
+.description-page-div1  { 
+  grid-area: 1 / 1 / 2 / 2; 
+  justify-self: center;
+  align-self: center;
+  display: flex;
+  justify-content: center;
+}
+.description-page-div2 { 
+  grid-area: 2 / 1 / 3 / 2; 
+  justify-self: center;
+  align-self: center;
+}
+
+.description-page-div3 { 
+  grid-area: 3 / 1 / 4 / 2; 
+  margin: 35px;
+}
+
+@media only screen and (min-width:725px) {
+  .Description {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 540px 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    color: White;
+  }
+  
+  .description-page-div1 {
+    grid-area: 1 / 1 / 2 / 2;
+    justify-self: center;
+    align-self: center;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .description-page-div2 {
+    grid-area: 1 / 2 / 2 / 3;
+    justify-self: center;
+    align-self: center;
+  }
+  
+  .description-page-div3 {
+    grid-area: 2 / 1 / 3 / 3;
+    margin: 35px;
+  }
+}
+
+.description-page-div3 h3{
+  margin-bottom: 15px;
+}
+
+#movie-desc-poster {
+  width: 260px;
+  box-shadow: 0 4px 8px rgba(0, 6, 12, 0.4);
+}
+
+#movie-desc-backdrop {
+background-image: linear-gradient(to bottom, transparent 0%, white 100%);
+  position: absolute;
+  width: 100%;
+  height: 525px;
+  opacity: 0.25;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  object-fit: cover
+}
+.service-logos {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 120px;
+  margin-top: 35px;
+}
+
+#netflix-logo {
+  width: 25px;
+  opacity: 1;
+}
+
+#hbo-logo {
+  width: 25px;
+  opacity: 0.15;
+}
+
+#hulu-logo {
+  width: 25px;
+  opacity: 1;
+}
+
+#prime-logo {
+  width: 70px;
+  opacity: 0.15;
+}

@@ -1,0 +1,142 @@
+
+.movielist-posters {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(145px, 1fr));
+  grid-template-rows: 1fr;
+  grid-column-gap: 15px;
+  grid-row-gap: 15px;
+  justify-items: center;
+  padding: 15px 25px 15px 25px;
+  height: 550px;
+}
+
+.movielist-poster-link {
+  width: 132px;
+  height: 197px;
+}
+
+.movielist-poster, .movielist-poster img, .overlay, .overlayFade{
+  width: 132px;
+  height: 197px;
+}
+
+.movielist-poster:hover .overlayFade{
+  width: 132px;
+  height: 197px;
+}
+
+.movielist-poster:hover .overlay{
+	opacity: .89;
+}
+
+.overlay {
+	transition: all .6s ease;
+	opacity: 0;
+  background-color: #eee;
+}
+
+.overlayFade{
+	background-color: #021435;
+}
+
+.text-overlay{
+	color: #caebfa;
+	font-family: sans-serif;
+}
+
+.movie-title-overlay {
+	font-size: 14px;
+}
+
+.year-overlay{
+	font-size: 12px;
+}
+
+.stars-overlay {
+	font-size: 9px;
+}
+
+.button-overlay {
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center; 
+	background: #021435;
+	font-family: Raleway;
+}
+
+.button-a {
+	padding: 10px 20px;
+	color: #5DBCD2;
+	text-transform: uppercase;
+	letter-spacing: 1.5px;
+	text-decoration: none;
+	font-size: 10px;
+	overflow: hidden;
+	transition: 0.15s;
+	cursor: pointer;
+}
+
+.button-a:hover {
+	color: #255784;
+	background: #5DBCD2;
+	box-shadow: 0 0 10px #2196f3, 0 0 40px #2196f3, 0 0 80px #5DBCD2;
+	transition-delay: .15s;
+}
+
+.button-a span:nth-child(1) {
+	top: 0;
+	left: -100%;
+	width: 100%;
+	height: 2px;
+	background: linear-gradient(90deg,transparent,#5DBCD2);
+}
+
+.button-a:hover span:nth-child(1) {
+	left: 100%;
+	transition: .6s;
+}
+
+.button-a span:nth-child(2) {
+	top: -100%;
+	right: 0;
+	width: 2px;
+	height: 100%;
+	background: linear-gradient(180deg,transparent,#5DBCD2);
+}
+
+.button-a:hover span:nth-child(2) {
+	top: 100%;
+	transition: .6s;
+	transition-delay: 0.15s;
+}
+
+.button-a span:nth-child(3) {
+	bottom: 0;
+	right: -100%;
+	width: 100%;
+	height: 2px;
+	background: linear-gradient(270deg,transparent,#5DBCD2);
+}
+
+.button-a:hover span:nth-child(3) {
+	right: 100%;
+	left: 100%;
+	transition: .6s;
+	transition-delay: 0.15s;
+}
+
+.button-a span:nth-child(4) {
+	bottom: -100%;
+	left: 0;
+	width: 2px;
+	height: 100%;
+	background: linear-gradient(360deg,transparent,#5DBCD2);
+}
+
+.button-a:hover span:nth-child(4) {
+	bottom: 100%;
+	transition: .6s;
+	transition-delay: 0.15s;
+}
